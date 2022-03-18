@@ -6,10 +6,17 @@ next_round = []
 final_four = []
 final_four_teams = []
 #have array of names for each corner in order of seed, then can make an array of these arrays
+""" 2021 teams
 west = ['Gonzaga', 'Iowa', 'Kansas', 'Virginia', 'Creighton', 'USC', 'Oregon', 'Oklahoma', 'Missouri', 'VCU', 'Witchita St', 'UCSB', 'Ohio', 'E Washington', 'Grand Canyon', 'random 16 seed']
 east = ['Michigan', 'Alabama', 'Texas', 'FSU', 'Colorado', 'BYU', 'UConn', 'LSU', 'St. Bonaventure', 'Maryland', 'MSU/UCLA', 'Georgetown', 'UNC Greensboro', 'Abil Christian,', 'Iona', 'MSM']
 south = ['Baylor', 'OSU', 'Arkansas', 'Purdue', 'Villanova', 'Texas Tech', 'Florida', 'UNC', 'Wisconsin', 'VT', 'Utah State', 'Winthrop', 'North Texas', 'Colgate', 'Oral Roberts', 'Hartford']
 midwest = ['Illinois', 'Houston', 'WVU', 'Oklahoma St', 'Tennessee', 'SDSU', 'Clemson', 'Loyola', 'GT', 'Rutgers', 'Syracuse', 'Oregon State', 'Liberty', 'Morehead St', 'Cleveland State', 'Drexel']
+"""
+west = ['Gonzaga', 'Duke', 'Texas Tech', 'Arkansas', 'UConn', 'Alabama', 'Michigan State', 'Boise State', 'Memphis', 'Davidson', 'Rutgers/Notre Dame', 'New Mexico State', 'Vermont', 'Montana State', 'CS Fullerton', 'Georgia State']
+east = ['Baylor', 'Kentucky', 'Purdue', 'UCLA', 'St. Marys', 'Texas', 'Murray State', 'North Carolina', 'Marquette', 'San Francisco', 'Virgina Tech', 'Indiana', 'Akron', 'Yale', 'St. Peters', 'Norfolk State']
+south = ['Arizona', 'Villanova', 'Tennessee', 'Illinois', 'Houston', 'Colorado State', 'Ohio State', 'Seton Hall', 'TCU', 'Loyola', 'Michigan', 'UAB', 'Chattanooga', 'Longwood', 'Delaware', 'Wright State/Bryant']
+midwest = ['Kansas', 'Auburn', 'Wisconsin', 'Providence', 'Iowa', 'LSU', 'USC', 'San Diego State', 'Creighton', 'Miami (FL)', 'Iowa State', 'Richmond', 'South Dakota State', 'Colgate', 'Jacksonville State', 'Texas Southern']
+
 
 teams = [west, east, south, midwest]
 
@@ -48,7 +55,7 @@ for r in range(4):
 		next_round.clear()
 
 	#loop is over, print the winner
-	print('round over, winner is ' + str(current_round[0]))
+	#print('round over, winner is ' + str(current_round[0]))
 	final_four.append(current_round[0])
 	final_four_teams.append(teams[r][current_round[0] - 1])
 
